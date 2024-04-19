@@ -77,6 +77,8 @@ local Title_8 = Instance.new("TextLabel")
 local Description_6 = Instance.new("TextLabel")
 local Button_6 = Instance.new("TextButton")
 local Music_2 = Instance.new("Folder")
+local cfps = Instance.new("Sound")
+cfps.SoundId = 'rbxassetid://1836137180'
 
 --Properties:
 
@@ -827,8 +829,30 @@ Button_6.TextColor3 = Color3.fromRGB(0, 0, 0)
 Button_6.TextSize = 14.000
 Button_6.TextTransparency = 1.000
 
+
+
 Music_2.Name = "Music"
 Music_2.Parent = ContainerFrame
+
+local happysong = Instance.new("Sound")
+happysong.SoundId = "rbxassetid://1843404009"
+happysong.Parent = Music_2
+local lifeinele = Instance.new("Sound")
+lifeinele.SoundId = "rbxassetid://1841647093"
+lifeinele.Parent = Music_2
+local rtacos = Instance.new("Sound")
+rtacos.SoundId = "rbxassetid://142376088"
+rtacos.Parent = Music_2
+local lofilul = Instance.new("Sound")
+lofilul.SoundId = "rbxassetid://9043887091"
+lofilul.Parent = Music_2
+local rscene = Instance.new("Sound")
+rscene.SoundId = "rbxassetid://1848354536"
+rscene.Parent = Music_2
+
+local aspectr = Instance.new("UIAspectRatioConstraint")
+aspectr.Parent = Main
+aspectr.AspectRatio = 1.76
 
 -- Scripts:
 
