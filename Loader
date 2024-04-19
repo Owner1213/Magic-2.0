@@ -1,0 +1,1353 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local MagicReDesign = Instance.new("ScreenGui")
+local ContainerFrame = Instance.new("Frame")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local SideButtons = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local Home = Instance.new("TextButton")
+local Combat = Instance.new("TextButton")
+local Blatant = Instance.new("TextButton")
+local Render = Instance.new("TextButton")
+local Utility = Instance.new("TextButton")
+local World = Instance.new("TextButton")
+local Other = Instance.new("TextButton")
+local Themes = Instance.new("TextButton")
+local TitleFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local Selection = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local HomeFrame = Instance.new("Frame")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Features = Instance.new("Frame")
+local Autoclicker = Instance.new("TextLabel")
+local Check2 = Instance.new("ImageLabel")
+local Reach = Instance.new("TextLabel")
+local Check = Instance.new("ImageLabel")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local Hitboxes = Instance.new("TextLabel")
+local Check_2 = Instance.new("ImageLabel")
+local MouseTP = Instance.new("TextLabel")
+local Check_3 = Instance.new("ImageLabel")
+local Music = Instance.new("Frame")
+local RelaxedScene = Instance.new("TextLabel")
+local PlayRS = Instance.new("ImageButton")
+local RainingTacos = Instance.new("TextLabel")
+local PlayRT = Instance.new("ImageButton")
+local Lofi = Instance.new("TextLabel")
+local PlayLofi = Instance.new("ImageButton")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local LifeInAnElevator = Instance.new("TextLabel")
+local PlayLIAE = Instance.new("ImageButton")
+local MusicAnti = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local FeaturesAnti = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local BlatantFrame = Instance.new("ScrollingFrame")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local Speed = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local Description = Instance.new("TextLabel")
+local Button = Instance.new("TextButton")
+local Reach_2 = Instance.new("Frame")
+local Title_4 = Instance.new("TextLabel")
+local Description_2 = Instance.new("TextLabel")
+local Button_2 = Instance.new("TextButton")
+local MouseTP_2 = Instance.new("Frame")
+local Title_5 = Instance.new("TextLabel")
+local Description_3 = Instance.new("TextLabel")
+local Button_3 = Instance.new("TextButton")
+local CombatFrame = Instance.new("ScrollingFrame")
+local UIListLayout_6 = Instance.new("UIListLayout")
+local AutoClicker = Instance.new("Frame")
+local Title_6 = Instance.new("TextLabel")
+local Description_4 = Instance.new("TextLabel")
+local Button_4 = Instance.new("TextButton")
+local Reach_3 = Instance.new("Frame")
+local Title_7 = Instance.new("TextLabel")
+local Description_5 = Instance.new("TextLabel")
+local Button_5 = Instance.new("TextButton")
+local MouseTP_3 = Instance.new("Frame")
+local Title_8 = Instance.new("TextLabel")
+local Description_6 = Instance.new("TextLabel")
+local Button_6 = Instance.new("TextButton")
+local Music_2 = Instance.new("Folder")
+
+--Properties:
+
+MagicReDesign.Name = "Magic ReDesign"
+MagicReDesign.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MagicReDesign.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ContainerFrame.Name = "ContainerFrame"
+ContainerFrame.Parent = MagicReDesign
+ContainerFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ContainerFrame.BackgroundTransparency = 1.000
+ContainerFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ContainerFrame.BorderSizePixel = 0
+ContainerFrame.Size = UDim2.new(0, 1309, 0, 642)
+ContainerFrame.ZIndex = 1000
+
+Main.Name = "Main"
+Main.Parent = ContainerFrame
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BackgroundTransparency = 0.650
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.167721525, 0, 0.110591903, 0)
+Main.Size = UDim2.new(0, 839, 0, 499)
+
+UICorner.Parent = Main
+
+SideButtons.Name = "SideButtons"
+SideButtons.Parent = Main
+SideButtons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SideButtons.BackgroundTransparency = 1.000
+SideButtons.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SideButtons.BorderSizePixel = 0
+SideButtons.Position = UDim2.new(0.00800757203, 0, 0.119881488, 0)
+SideButtons.Size = UDim2.new(0, 131, 0, 419)
+SideButtons.ZIndex = 10
+
+UIListLayout.Parent = SideButtons
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 25)
+
+Home.Name = "Home"
+Home.Parent = SideButtons
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.BorderSizePixel = 0
+Home.Position = UDim2.new(0, 0, 0.00715990458, 0)
+Home.Size = UDim2.new(0, 109, 0, 29)
+Home.Font = Enum.Font.SourceSans
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(0, 0, 0)
+Home.TextSize = 39.000
+Home.TextWrapped = true
+
+Combat.Name = "Combat"
+Combat.Parent = SideButtons
+Combat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Combat.BackgroundTransparency = 1.000
+Combat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Combat.BorderSizePixel = 0
+Combat.Size = UDim2.new(0, 109, 0, 29)
+Combat.Font = Enum.Font.SourceSans
+Combat.Text = "Combat"
+Combat.TextColor3 = Color3.fromRGB(0, 0, 0)
+Combat.TextSize = 39.000
+Combat.TextWrapped = true
+
+Blatant.Name = "Blatant"
+Blatant.Parent = SideButtons
+Blatant.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Blatant.BackgroundTransparency = 1.000
+Blatant.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Blatant.BorderSizePixel = 0
+Blatant.Size = UDim2.new(0, 109, 0, 29)
+Blatant.Font = Enum.Font.SourceSans
+Blatant.Text = "Blatant"
+Blatant.TextColor3 = Color3.fromRGB(0, 0, 0)
+Blatant.TextSize = 39.000
+Blatant.TextWrapped = true
+
+Render.Name = "Render"
+Render.Parent = SideButtons
+Render.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Render.BackgroundTransparency = 1.000
+Render.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Render.BorderSizePixel = 0
+Render.Size = UDim2.new(0, 109, 0, 29)
+Render.Visible = false
+Render.Font = Enum.Font.SourceSans
+Render.Text = "Render"
+Render.TextColor3 = Color3.fromRGB(0, 0, 0)
+Render.TextSize = 39.000
+Render.TextWrapped = true
+
+Utility.Name = "Utility"
+Utility.Parent = SideButtons
+Utility.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Utility.BackgroundTransparency = 1.000
+Utility.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Utility.BorderSizePixel = 0
+Utility.Size = UDim2.new(0, 109, 0, 29)
+Utility.Visible = false
+Utility.Font = Enum.Font.SourceSans
+Utility.Text = "Utility"
+Utility.TextColor3 = Color3.fromRGB(0, 0, 0)
+Utility.TextSize = 39.000
+Utility.TextWrapped = true
+
+World.Name = "World"
+World.Parent = SideButtons
+World.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+World.BackgroundTransparency = 1.000
+World.BorderColor3 = Color3.fromRGB(0, 0, 0)
+World.BorderSizePixel = 0
+World.Size = UDim2.new(0, 109, 0, 29)
+World.Visible = false
+World.Font = Enum.Font.SourceSans
+World.Text = "World"
+World.TextColor3 = Color3.fromRGB(0, 0, 0)
+World.TextSize = 39.000
+World.TextWrapped = true
+
+Other.Name = "Other"
+Other.Parent = SideButtons
+Other.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Other.BackgroundTransparency = 1.000
+Other.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Other.BorderSizePixel = 0
+Other.Size = UDim2.new(0, 109, 0, 29)
+Other.Visible = false
+Other.Font = Enum.Font.SourceSans
+Other.Text = "Other"
+Other.TextColor3 = Color3.fromRGB(0, 0, 0)
+Other.TextSize = 39.000
+Other.TextWrapped = true
+
+Themes.Name = "Themes"
+Themes.Parent = SideButtons
+Themes.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Themes.BackgroundTransparency = 1.000
+Themes.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Themes.BorderSizePixel = 0
+Themes.Size = UDim2.new(0, 109, 0, 29)
+Themes.Visible = false
+Themes.Font = Enum.Font.SourceSans
+Themes.Text = "Themes"
+Themes.TextColor3 = Color3.fromRGB(0, 0, 0)
+Themes.TextSize = 39.000
+Themes.TextWrapped = true
+
+TitleFrame.Name = "TitleFrame"
+TitleFrame.Parent = Main
+TitleFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TitleFrame.BackgroundTransparency = 0.650
+TitleFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TitleFrame.BorderSizePixel = 0
+TitleFrame.Size = UDim2.new(0, 130, 0, 52)
+
+UICorner_2.CornerRadius = UDim.new(0, 15)
+UICorner_2.Parent = TitleFrame
+
+TextLabel.Parent = TitleFrame
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(1.17375301e-07, 0, -5.86876524e-07, 0)
+TextLabel.Size = UDim2.new(0.999999762, 0, 0.999999642, 0)
+TextLabel.ZIndex = 12
+TextLabel.Text = "Magic 2.0"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 19.000
+TextLabel.TextWrapped = true
+
+Selection.Name = "Selection"
+Selection.Parent = Main
+Selection.AnchorPoint = Vector2.new(0.5, 0.5)
+Selection.BackgroundColor3 = Color3.fromRGB(199, 199, 199)
+Selection.BackgroundTransparency = 0.650
+Selection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Selection.BorderSizePixel = 0
+Selection.Position = UDim2.new(0.0726814866, 0, 0.364432842, 0)
+Selection.Size = UDim2.new(0, 108, 0, 36)
+
+UICorner_3.CornerRadius = UDim.new(0, 10)
+UICorner_3.Parent = Selection
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = Main
+HomeFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeFrame.BackgroundTransparency = 1.000
+HomeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeFrame.BorderSizePixel = 0
+HomeFrame.ClipsDescendants = true
+HomeFrame.Position = UDim2.new(0.154946327, 0, 0, 0)
+HomeFrame.Size = UDim2.new(0, 709, 0, 499)
+
+UIListLayout_2.Parent = HomeFrame
+UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout_2.Padding = UDim.new(0, 17)
+
+Features.Name = "Features"
+Features.Parent = HomeFrame
+Features.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
+Features.BackgroundTransparency = 0.860
+Features.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Features.BorderSizePixel = 0
+Features.Position = UDim2.new(0, 0, 0.239478961, 0)
+Features.Size = UDim2.new(0, 307, 0, 264)
+
+Autoclicker.Name = "Autoclicker"
+Autoclicker.Parent = Features
+Autoclicker.BackgroundTransparency = 1.000
+Autoclicker.BorderSizePixel = 0
+Autoclicker.Position = UDim2.new(0.0195439737, 0, 0.227272734, 0)
+Autoclicker.Size = UDim2.new(0.364820838, 0, 0.126215383, 0)
+Autoclicker.Text = "Autoclicker"
+Autoclicker.TextColor3 = Color3.fromRGB(0, 0, 0)
+Autoclicker.TextScaled = true
+Autoclicker.TextWrapped = true
+
+Check2.Name = "Check2"
+Check2.Parent = Autoclicker
+Check2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Check2.BackgroundTransparency = 1.000
+Check2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Check2.BorderSizePixel = 0
+Check2.Position = UDim2.new(0.991507649, 0, -0.00757058151, 0)
+Check2.Size = UDim2.new(0, 34, 0, 34)
+Check2.ZIndex = 0
+Check2.Image = "rbxassetid://17153213429"
+Check2.ImageColor3 = Color3.fromRGB(89, 255, 0)
+
+Reach.Name = "Reach"
+Reach.Parent = Features
+Reach.BackgroundTransparency = 1.000
+Reach.BorderSizePixel = 0
+Reach.Position = UDim2.new(0.0195439737, 0, 0.378787875, 0)
+Reach.Size = UDim2.new(0.364820838, 0, 0.126215383, 0)
+Reach.Text = "Reach"
+Reach.TextColor3 = Color3.fromRGB(0, 0, 0)
+Reach.TextScaled = true
+Reach.TextWrapped = true
+
+Check.Name = "Check"
+Check.Parent = Reach
+Check.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Check.BackgroundTransparency = 1.000
+Check.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Check.BorderSizePixel = 0
+Check.Position = UDim2.new(0.920079112, 0, -0.0128166853, 0)
+Check.Size = UDim2.new(0, 34, 0, 34)
+Check.ZIndex = 0
+Check.Image = "rbxassetid://17153213429"
+Check.ImageColor3 = Color3.fromRGB(89, 255, 0)
+
+UIListLayout_3.Parent = Features
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout_3.Padding = UDim.new(0, 11)
+
+Hitboxes.Name = "Hitboxes"
+Hitboxes.Parent = Features
+Hitboxes.BackgroundTransparency = 1.000
+Hitboxes.BorderSizePixel = 0
+Hitboxes.Position = UDim2.new(0.0195439737, 0, 0.378787875, 0)
+Hitboxes.Size = UDim2.new(0.364820838, 0, 0.126215383, 0)
+Hitboxes.Visible = false
+Hitboxes.Text = "Hitboxes"
+Hitboxes.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hitboxes.TextScaled = true
+Hitboxes.TextWrapped = true
+
+Check_2.Name = "Check"
+Check_2.Parent = Hitboxes
+Check_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Check_2.BackgroundTransparency = 1.000
+Check_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Check_2.BorderSizePixel = 0
+Check_2.Position = UDim2.new(0.991507649, 0, -0.0128166853, 0)
+Check_2.Size = UDim2.new(0, 34, 0, 34)
+Check_2.ZIndex = 0
+Check_2.Image = "rbxassetid://17153213429"
+Check_2.ImageColor3 = Color3.fromRGB(89, 255, 0)
+
+MouseTP.Name = "MouseTP"
+MouseTP.Parent = Features
+MouseTP.BackgroundTransparency = 1.000
+MouseTP.BorderSizePixel = 0
+MouseTP.Position = UDim2.new(0.0195439737, 0, 0.378787875, 0)
+MouseTP.Size = UDim2.new(0.364820838, 0, 0.126215383, 0)
+MouseTP.Text = "MouseTP"
+MouseTP.TextColor3 = Color3.fromRGB(0, 0, 0)
+MouseTP.TextScaled = true
+MouseTP.TextWrapped = true
+
+Check_3.Name = "Check"
+Check_3.Parent = MouseTP
+Check_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Check_3.BackgroundTransparency = 1.000
+Check_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Check_3.BorderSizePixel = 0
+Check_3.Position = UDim2.new(0.991507649, 0, -0.0128166853, 0)
+Check_3.Size = UDim2.new(0, 34, 0, 34)
+Check_3.ZIndex = 0
+Check_3.Image = "rbxassetid://17153213429"
+Check_3.ImageColor3 = Color3.fromRGB(255, 225, 0)
+
+Music.Name = "Music"
+Music.Parent = HomeFrame
+Music.BackgroundColor3 = Color3.fromRGB(175, 175, 175)
+Music.BackgroundTransparency = 0.860
+Music.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Music.BorderSizePixel = 0
+Music.Position = UDim2.new(0.497884333, 0, 0.235470936, 0)
+Music.Size = UDim2.new(0, 307, 0, 264)
+
+RelaxedScene.Name = "Relaxed Scene"
+RelaxedScene.Parent = Music
+RelaxedScene.BackgroundTransparency = 1.000
+RelaxedScene.BorderSizePixel = 0
+RelaxedScene.Position = UDim2.new(0.0195439737, 0, 0.227272734, 0)
+RelaxedScene.Size = UDim2.new(0.612377822, 0, 0.126215383, 0)
+RelaxedScene.Text = "Relaxed Scene"
+RelaxedScene.TextColor3 = Color3.fromRGB(0, 0, 0)
+RelaxedScene.TextScaled = true
+RelaxedScene.TextWrapped = true
+
+PlayRS.Name = "PlayRS"
+PlayRS.Parent = RelaxedScene
+PlayRS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayRS.BackgroundTransparency = 1.000
+PlayRS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayRS.BorderSizePixel = 0
+PlayRS.Position = UDim2.new(0.999000013, 0, -0.0359999985, 0)
+PlayRS.Size = UDim2.new(0, 34, 0, 34)
+PlayRS.Image = "rbxassetid://17153411458"
+PlayRS.ImageColor3 = Color3.fromRGB(125, 125, 125)
+
+RainingTacos.Name = "Raining Tacos"
+RainingTacos.Parent = Music
+RainingTacos.BackgroundTransparency = 1.000
+RainingTacos.BorderSizePixel = 0
+RainingTacos.Position = UDim2.new(0.0195439737, 0, 0.356060594, 0)
+RainingTacos.Size = UDim2.new(0.612377822, 0, 0.126215383, 0)
+RainingTacos.Text = "Raining Tacos"
+RainingTacos.TextColor3 = Color3.fromRGB(0, 0, 0)
+RainingTacos.TextScaled = true
+RainingTacos.TextWrapped = true
+
+PlayRT.Name = "PlayRT"
+PlayRT.Parent = RainingTacos
+PlayRT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayRT.BackgroundTransparency = 1.000
+PlayRT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayRT.BorderSizePixel = 0
+PlayRT.Position = UDim2.new(0.999000013, 0, -0.0359999985, 0)
+PlayRT.Size = UDim2.new(0, 34, 0, 34)
+PlayRT.Image = "rbxassetid://17153411458"
+PlayRT.ImageColor3 = Color3.fromRGB(125, 125, 125)
+
+Lofi.Name = "Lofi"
+Lofi.Parent = Music
+Lofi.BackgroundTransparency = 1.000
+Lofi.BorderSizePixel = 0
+Lofi.Position = UDim2.new(0.0195439737, 0, 0.484848499, 0)
+Lofi.Size = UDim2.new(0.612377822, 0, 0.126215383, 0)
+Lofi.Text = "Lo-fi Chill A"
+Lofi.TextColor3 = Color3.fromRGB(0, 0, 0)
+Lofi.TextScaled = true
+Lofi.TextWrapped = true
+
+PlayLofi.Name = "PlayLofi"
+PlayLofi.Parent = Lofi
+PlayLofi.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayLofi.BackgroundTransparency = 1.000
+PlayLofi.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayLofi.BorderSizePixel = 0
+PlayLofi.Position = UDim2.new(0.999000013, 0, -0.0359999985, 0)
+PlayLofi.Size = UDim2.new(0, 34, 0, 34)
+PlayLofi.Image = "rbxassetid://17153411458"
+PlayLofi.ImageColor3 = Color3.fromRGB(125, 125, 125)
+
+UIListLayout_4.Parent = Music
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_4.VerticalAlignment = Enum.VerticalAlignment.Center
+UIListLayout_4.Padding = UDim.new(0, 15)
+
+LifeInAnElevator.Name = "Life In An Elevator"
+LifeInAnElevator.Parent = Music
+LifeInAnElevator.BackgroundTransparency = 1.000
+LifeInAnElevator.BorderSizePixel = 0
+LifeInAnElevator.Position = UDim2.new(0, 0, 0.711442649, 0)
+LifeInAnElevator.Size = UDim2.new(0.690553725, 0, 0.126215383, 0)
+LifeInAnElevator.ZIndex = 0
+LifeInAnElevator.Text = "Life in an Elevator"
+LifeInAnElevator.TextColor3 = Color3.fromRGB(0, 0, 0)
+LifeInAnElevator.TextScaled = true
+LifeInAnElevator.TextWrapped = true
+
+PlayLIAE.Name = "PlayLIAE"
+PlayLIAE.Parent = LifeInAnElevator
+PlayLIAE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayLIAE.BackgroundTransparency = 1.000
+PlayLIAE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PlayLIAE.BorderSizePixel = 0
+PlayLIAE.Position = UDim2.new(0.999000013, 0, -0.0359999985, 0)
+PlayLIAE.Size = UDim2.new(0, 34, 0, 34)
+PlayLIAE.Image = "rbxassetid://17153411458"
+PlayLIAE.ImageColor3 = Color3.fromRGB(125, 125, 125)
+
+MusicAnti.Name = "MusicAnti"
+MusicAnti.Parent = Main
+MusicAnti.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MusicAnti.BackgroundTransparency = 1.000
+MusicAnti.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MusicAnti.BorderSizePixel = 0
+MusicAnti.Position = UDim2.new(0.54112041, 0, 0.236472949, 0)
+MusicAnti.Size = UDim2.new(0, 307, 0, 265)
+MusicAnti.ZIndex = 100
+
+Title.Name = "Title"
+Title.Parent = MusicAnti
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0195439737, 0, 0.0227272734, 0)
+Title.Size = UDim2.new(0.413680792, 0, 0.16788204, 0)
+Title.Text = "Music"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextWrapped = true
+
+FeaturesAnti.Name = "FeaturesAnti"
+FeaturesAnti.Parent = Main
+FeaturesAnti.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FeaturesAnti.BackgroundTransparency = 1.000
+FeaturesAnti.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FeaturesAnti.BorderSizePixel = 0
+FeaturesAnti.Position = UDim2.new(0.154946372, 0, 0.236472949, 0)
+FeaturesAnti.Size = UDim2.new(0, 307, 0, 263)
+
+Title_2.Name = "Title"
+Title_2.Parent = FeaturesAnti
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.0195439737, 0, 0.0227272734, 0)
+Title_2.Size = UDim2.new(0.413680792, 0, 0.16788204, 0)
+Title_2.Text = "Features"
+Title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.TextScaled = true
+Title_2.TextWrapped = true
+
+BlatantFrame.Name = "BlatantFrame"
+BlatantFrame.Parent = Main
+BlatantFrame.Active = true
+BlatantFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BlatantFrame.BackgroundTransparency = 1.000
+BlatantFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BlatantFrame.BorderSizePixel = 0
+BlatantFrame.Position = UDim2.new(0.168057218, 0, -0.00200400804, 0)
+BlatantFrame.Size = UDim2.new(0, 698, 0, 500)
+BlatantFrame.Visible = false
+
+UIListLayout_5.Parent = BlatantFrame
+UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_5.Padding = UDim.new(0, 15)
+
+Speed.Name = "Speed"
+Speed.Parent = BlatantFrame
+Speed.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Speed.BackgroundTransparency = 0.550
+Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Speed.BorderSizePixel = 0
+Speed.Size = UDim2.new(0, 679, 0, 114)
+
+Title_3.Name = "Title"
+Title_3.Parent = Speed
+Title_3.BackgroundTransparency = 1.000
+Title_3.Position = UDim2.new(0.0265095737, 0, 0.0663157701, 0)
+Title_3.Size = UDim2.new(0.285714298, 0, 0.558519959, 0)
+Title_3.Text = "Speed"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextSize = 26.000
+Title_3.TextWrapped = true
+Title_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Description.Name = "Description"
+Description.Parent = Speed
+Description.BackgroundTransparency = 1.000
+Description.Position = UDim2.new(0.0265095737, 0, 0.519436598, 0)
+Description.Size = UDim2.new(0.961708367, 0, 0.290000141, 0)
+Description.Text = "Changes the localplayer's speed."
+Description.TextColor3 = Color3.fromRGB(112, 112, 112)
+Description.TextScaled = true
+Description.TextSize = 15.000
+Description.TextWrapped = true
+Description.TextXAlignment = Enum.TextXAlignment.Left
+
+Button.Name = "Button"
+Button.Parent = Speed
+Button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button.BackgroundTransparency = 1.000
+Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button.BorderSizePixel = 0
+Button.Size = UDim2.new(0, 698, 0, 114)
+Button.ZIndex = 10000
+Button.Font = Enum.Font.SourceSans
+Button.Text = ""
+Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button.TextSize = 14.000
+Button.TextTransparency = 1.000
+
+Reach_2.Name = "Reach"
+Reach_2.Parent = BlatantFrame
+Reach_2.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Reach_2.BackgroundTransparency = 0.550
+Reach_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Reach_2.BorderSizePixel = 0
+Reach_2.Position = UDim2.new(-0.0157593116, 0, 0.252000004, 0)
+Reach_2.Size = UDim2.new(0, 679, 0, 114)
+Reach_2.Visible = false
+
+Title_4.Name = "Title"
+Title_4.Parent = Reach_2
+Title_4.BackgroundTransparency = 1.000
+Title_4.Position = UDim2.new(0.0117820324, 0, 0.0399999768, 0)
+Title_4.Size = UDim2.new(0.200294554, 0, 0.479436636, 0)
+Title_4.Text = "Reach"
+Title_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_4.TextSize = 26.000
+Title_4.TextWrapped = true
+
+Description_2.Name = "Description"
+Description_2.Parent = Reach_2
+Description_2.BackgroundTransparency = 1.000
+Description_2.Position = UDim2.new(0.0368188508, 0, 0.519436479, 0)
+Description_2.Size = UDim2.new(0.849779069, 0, 0.290000111, 0)
+Description_2.Text = "Grants you the ability to have better reach."
+Description_2.TextColor3 = Color3.fromRGB(112, 112, 112)
+Description_2.TextScaled = true
+Description_2.TextSize = 15.000
+Description_2.TextWrapped = true
+
+Button_2.Name = "Button"
+Button_2.Parent = Reach_2
+Button_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_2.BackgroundTransparency = 1.000
+Button_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.BorderSizePixel = 0
+Button_2.Size = UDim2.new(0, 698, 0, 114)
+Button_2.ZIndex = 10000
+Button_2.Font = Enum.Font.SourceSans
+Button_2.Text = ""
+Button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.TextSize = 14.000
+Button_2.TextTransparency = 1.000
+
+MouseTP_2.Name = "MouseTP"
+MouseTP_2.Parent = BlatantFrame
+MouseTP_2.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+MouseTP_2.BackgroundTransparency = 0.550
+MouseTP_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MouseTP_2.BorderSizePixel = 0
+MouseTP_2.Position = UDim2.new(-0.0157593116, 0, 0.252000004, 0)
+MouseTP_2.Size = UDim2.new(0, 679, 0, 114)
+MouseTP_2.Visible = false
+
+Title_5.Name = "Title"
+Title_5.Parent = MouseTP_2
+Title_5.BackgroundTransparency = 1.000
+Title_5.Position = UDim2.new(0.0117820324, 0, 0.0399999768, 0)
+Title_5.Size = UDim2.new(0.200294554, 0, 0.479436636, 0)
+Title_5.Text = "MouseTP"
+Title_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_5.TextScaled = true
+Title_5.TextSize = 26.000
+Title_5.TextWrapped = true
+
+Description_3.Name = "Description"
+Description_3.Parent = MouseTP_2
+Description_3.BackgroundTransparency = 1.000
+Description_3.Position = UDim2.new(0.0368188508, 0, 0.519436479, 0)
+Description_3.Size = UDim2.new(0.849779069, 0, 0.290000111, 0)
+Description_3.Text = "Teleports to where your mouse is. (beta)"
+Description_3.TextColor3 = Color3.fromRGB(112, 112, 112)
+Description_3.TextScaled = true
+Description_3.TextSize = 15.000
+Description_3.TextWrapped = true
+
+Button_3.Name = "Button"
+Button_3.Parent = MouseTP_2
+Button_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_3.BackgroundTransparency = 1.000
+Button_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_3.BorderSizePixel = 0
+Button_3.Size = UDim2.new(0, 698, 0, 114)
+Button_3.ZIndex = 10000
+Button_3.Font = Enum.Font.SourceSans
+Button_3.Text = ""
+Button_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_3.TextSize = 14.000
+Button_3.TextTransparency = 1.000
+
+CombatFrame.Name = "CombatFrame"
+CombatFrame.Parent = Main
+CombatFrame.Active = true
+CombatFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CombatFrame.BackgroundTransparency = 1.000
+CombatFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CombatFrame.BorderSizePixel = 0
+CombatFrame.Position = UDim2.new(0.168057218, 0, -0.00200400804, 0)
+CombatFrame.Size = UDim2.new(0, 698, 0, 500)
+CombatFrame.Visible = false
+
+UIListLayout_6.Parent = CombatFrame
+UIListLayout_6.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_6.Padding = UDim.new(0, 15)
+
+AutoClicker.Name = "AutoClicker"
+AutoClicker.Parent = CombatFrame
+AutoClicker.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+AutoClicker.BackgroundTransparency = 0.550
+AutoClicker.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AutoClicker.BorderSizePixel = 0
+AutoClicker.Size = UDim2.new(0, 679, 0, 114)
+
+Title_6.Name = "Title"
+Title_6.Parent = AutoClicker
+Title_6.BackgroundTransparency = 1.000
+Title_6.Position = UDim2.new(0.0117820324, 0, 0.0399999991, 0)
+Title_6.Size = UDim2.new(0.285714298, 0, 0.558519959, 0)
+Title_6.Text = "Autoclicker"
+Title_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_6.TextSize = 26.000
+Title_6.TextWrapped = true
+
+Description_4.Name = "Description"
+Description_4.Parent = AutoClicker
+Description_4.BackgroundTransparency = 1.000
+Description_4.Position = UDim2.new(0, 0, 0.519436598, 0)
+Description_4.Size = UDim2.new(0.98821795, 0, 0.290000141, 0)
+Description_4.Text = "Automatically clicks the tool you have on your hand by holding leftclick."
+Description_4.TextColor3 = Color3.fromRGB(112, 112, 112)
+Description_4.TextScaled = true
+Description_4.TextSize = 15.000
+Description_4.TextWrapped = true
+
+Button_4.Name = "Button"
+Button_4.Parent = AutoClicker
+Button_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_4.BackgroundTransparency = 1.000
+Button_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_4.BorderSizePixel = 0
+Button_4.Size = UDim2.new(0, 698, 0, 114)
+Button_4.ZIndex = 10000
+Button_4.Font = Enum.Font.SourceSans
+Button_4.Text = ""
+Button_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_4.TextSize = 14.000
+Button_4.TextTransparency = 1.000
+
+Reach_3.Name = "Reach"
+Reach_3.Parent = CombatFrame
+Reach_3.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+Reach_3.BackgroundTransparency = 0.550
+Reach_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Reach_3.BorderSizePixel = 0
+Reach_3.Position = UDim2.new(-0.0157593116, 0, 0.252000004, 0)
+Reach_3.Size = UDim2.new(0, 679, 0, 114)
+
+Title_7.Name = "Title"
+Title_7.Parent = Reach_3
+Title_7.BackgroundTransparency = 1.000
+Title_7.Position = UDim2.new(0.0117820324, 0, 0.0399999768, 0)
+Title_7.Size = UDim2.new(0.200294554, 0, 0.479436636, 0)
+Title_7.Text = "Reach"
+Title_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_7.TextSize = 26.000
+Title_7.TextWrapped = true
+
+Description_5.Name = "Description"
+Description_5.Parent = Reach_3
+Description_5.BackgroundTransparency = 1.000
+Description_5.Position = UDim2.new(0.0368188508, 0, 0.519436479, 0)
+Description_5.Size = UDim2.new(0.849779069, 0, 0.290000111, 0)
+Description_5.Text = "Grants you the ability to have better reach."
+Description_5.TextColor3 = Color3.fromRGB(112, 112, 112)
+Description_5.TextScaled = true
+Description_5.TextSize = 15.000
+Description_5.TextWrapped = true
+
+Button_5.Name = "Button"
+Button_5.Parent = Reach_3
+Button_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_5.BackgroundTransparency = 1.000
+Button_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_5.BorderSizePixel = 0
+Button_5.Size = UDim2.new(0, 698, 0, 114)
+Button_5.ZIndex = 10000
+Button_5.Font = Enum.Font.SourceSans
+Button_5.Text = ""
+Button_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_5.TextSize = 14.000
+Button_5.TextTransparency = 1.000
+
+MouseTP_3.Name = "MouseTP"
+MouseTP_3.Parent = CombatFrame
+MouseTP_3.BackgroundColor3 = Color3.fromRGB(74, 74, 74)
+MouseTP_3.BackgroundTransparency = 0.550
+MouseTP_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MouseTP_3.BorderSizePixel = 0
+MouseTP_3.Position = UDim2.new(-0.0157593116, 0, 0.252000004, 0)
+MouseTP_3.Size = UDim2.new(0, 679, 0, 114)
+
+Title_8.Name = "Title"
+Title_8.Parent = MouseTP_3
+Title_8.BackgroundTransparency = 1.000
+Title_8.Position = UDim2.new(0.0117820324, 0, 0.0399999768, 0)
+Title_8.Size = UDim2.new(0.200294554, 0, 0.479436636, 0)
+Title_8.Text = "MouseTP"
+Title_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_8.TextScaled = true
+Title_8.TextSize = 26.000
+Title_8.TextWrapped = true
+
+Description_6.Name = "Description"
+Description_6.Parent = MouseTP_3
+Description_6.BackgroundTransparency = 1.000
+Description_6.Position = UDim2.new(0.0368188508, 0, 0.519436479, 0)
+Description_6.Size = UDim2.new(0.849779069, 0, 0.290000111, 0)
+Description_6.Text = "Teleports to where your mouse is. (beta)"
+Description_6.TextColor3 = Color3.fromRGB(112, 112, 112)
+Description_6.TextScaled = true
+Description_6.TextSize = 15.000
+Description_6.TextWrapped = true
+
+Button_6.Name = "Button"
+Button_6.Parent = MouseTP_3
+Button_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Button_6.BackgroundTransparency = 1.000
+Button_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Button_6.BorderSizePixel = 0
+Button_6.Size = UDim2.new(0, 698, 0, 114)
+Button_6.ZIndex = 10000
+Button_6.Font = Enum.Font.SourceSans
+Button_6.Text = ""
+Button_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_6.TextSize = 14.000
+Button_6.TextTransparency = 1.000
+
+Music_2.Name = "Music"
+Music_2.Parent = ContainerFrame
+
+-- Scripts:
+
+local function NZXU_fake_script() -- Selection.Tween 
+	local script = Instance.new('LocalScript', Selection)
+
+	local TweenService = game:GetService("TweenService")
+	local UserInputService = game:GetService("UserInputService")
+	
+	local Home = script.Parent.Parent.SideButtons.Home
+	local Combat = script.Parent.Parent.SideButtons.Combat
+	local Blatant = script.Parent.Parent.SideButtons.Blatant
+	local Render = script.Parent.Parent.SideButtons.Render
+	local Utility = script.Parent.Parent.SideButtons.Utility
+	local World = script.Parent.Parent.SideButtons.World
+	local Other = script.Parent.Parent.SideButtons.Other
+	local Themes = script.Parent.Parent.SideButtons.Themes
+	local rtp = UDim2.new(0.077, 0,0.256, 0)
+	local rts = UDim2.new(0.4, 0, 0.4, 0)
+	local GuiElement = script.Parent
+	local HomeFrame = script.Parent.Parent.HomeFrame
+	local HomeFeaturesAnti = script.Parent.Parent.FeaturesAnti
+	local HomeMusicAnti = script.Parent.Parent.MusicAnti
+	local CombatFrame = script.Parent.Parent.CombatFrame
+	local BlatantFrame = script.Parent.Parent.BlatantFrame
+	
+	local TweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+	
+	local HomeTarg = {Size = UDim2.new(0, 86,0, 36), Position = UDim2.new(0.076, 0,0.148, 0)}
+	local CombatTarg = {Size = UDim2.new(0, 108,0, 36), Position = UDim2.new(0.073, 0,0.256, 0)}
+	local BlatantTarg = {Size = UDim2.new(0, 108,0, 36), Position = UDim2.new(0.073, 0,0.364, 0)}
+	
+	
+	local function TweenGuiElement(target)
+		local Tween = TweenService:Create(GuiElement, TweenInfo, target)
+		Tween:Play()
+	end
+	
+	
+	
+	
+	Home.MouseButton1Click:Connect(function()
+		TweenGuiElement(HomeTarg)
+		HomeFrame.Visible = true
+		HomeMusicAnti.Visible = true
+		HomeFeaturesAnti.Visible = true
+		CombatFrame.Visible = false
+		BlatantFrame.Visible = false
+	end)
+	
+	Combat.MouseButton1Click:Connect(function()
+		TweenGuiElement(CombatTarg)
+		HomeFrame.Visible = false
+		HomeMusicAnti.Visible = false
+		HomeFeaturesAnti.Visible = false
+		CombatFrame.Visible = true
+		BlatantFrame.Visible = false
+	end)
+	
+	Blatant.MouseButton1Click:Connect(function()  
+		TweenGuiElement(BlatantTarg)
+		BlatantFrame.Visible = true
+		HomeFrame.Visible = false
+		HomeMusicAnti.Visible = false
+		HomeFeaturesAnti.Visible = false
+		CombatFrame.Visible = false
+	end)
+end
+coroutine.wrap(NZXU_fake_script)()
+local function YPMKO_fake_script() -- Music.Radio 
+	local script = Instance.new('LocalScript', Music)
+
+	local Lofi = script.Parent.Lofi.PlayLofi
+	local RelaxedScene = script.Parent["Relaxed Scene"].PlayRS
+	local RainingTacos = script.Parent["Raining Tacos"].PlayRT
+	local LifeInanElevator = script.Parent["Life In An Elevator"].PlayLIAE
+	local PauseLink = "rbxassetid://17138768154"
+	local PlayLink = "rbxassetid://17138584153"
+	local Music = script.Parent.Parent.Parent.Parent.Music
+	
+	Lofi.MouseButton1Click:Connect(function()  
+		if Lofi.Image == PlayLink then
+			Music["Lo-fi Chill A"]:Play()
+			Lofi.Image = PauseLink
+		else
+			Music["Lo-fi Chill A"]:Stop()
+			Lofi.Image = PlayLink
+		end
+	end)
+	
+	RelaxedScene.MouseButton1Click:Connect(function()  
+		if RelaxedScene.Image == PlayLink then
+			Music["Relaxed Scene"]:Play()
+			RelaxedScene.Image = PauseLink
+		else
+			Music["Relaxed Scene"]:Stop()
+			RelaxedScene.Image = PlayLink
+		end
+	end)
+	
+	RainingTacos.MouseButton1Click:Connect(function()  
+		if RainingTacos.Image == PlayLink then
+			Music["Parry Gripp - Raining Tacos"]:Play()
+			RainingTacos.Image = PauseLink
+		else
+			Music["Parry Gripp - Raining Tacos"]:Stop()
+			RainingTacos.Image = PlayLink
+		end
+	end)
+	
+	LifeInanElevator.MouseButton1Click:Connect(function()  
+		if LifeInanElevator.Image == PlayLink then
+			Music["Life in an Elevator"]:Play()
+			LifeInanElevator.Image = PauseLink
+		else
+			Music["Life in an Elevator"]:Stop()
+			LifeInanElevator.Image = PlayLink
+		end
+	end)
+	
+end
+coroutine.wrap(YPMKO_fake_script)()
+local function AEEH_fake_script() -- Speed.ClickScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	local title = script.Parent.Title
+	local button = script.Parent.Button
+	local InputService = game:GetService("UserInputService")
+	local lplr = game.Players.LocalPlayer
+	
+	button.MouseButton1Click:Connect(function()  
+		if title.TextColor3 == Color3.fromRGB(255,64,0) then
+			lplr.Character.Humanoid.WalkSpeed = 16
+			title.TextColor3 = Color3.fromRGB(255,255,255)
+		else
+			lplr.Character.Humanoid.WalkSpeed = 32
+			title.TextColor3 = Color3.fromRGB(255,64,0)
+		end
+	end)
+end
+coroutine.wrap(AEEH_fake_script)()
+local function GCNAUP_fake_script() -- Reach_2.ReachClickScript 
+	local script = Instance.new('LocalScript', Reach_2)
+
+	local title = script.Parent.Title
+	local button = script.Parent.Button
+	local InputService = game:GetService("UserInputService")
+	local lplr = game.Players.LocalPlayer
+	local plr = game.Players.LocalPlayer
+	local franelul = script.Parent
+	local description = script.Parent.Description
+	local visualizer = Instance.new("Part")
+	
+	
+	visualizer.BrickColor = BrickColor.Blue()
+	visualizer.Transparency = 1
+	visualizer.Anchored = true
+	visualizer.CanCollide = false
+	visualizer.Size = Vector3.new(0.5,0.5,0.5)
+	visualizer.BottomSurface = Enum.SurfaceType.Smooth
+	visualizer.TopSurface = Enum.SurfaceType.Smooth
+		
+	local active = true
+	local trueActive = true
+	local reachType = "Sphere"
+	local dmgEnabled = true
+	local visualizerEnabled = true
+	visualizer.Transparency = 0.6
+	
+	
+	button.MouseButton1Click:Connect(function()  
+		if title.TextColor3 == Color3.fromRGB(255,255,255) then
+			
+			active = true
+			trueActive = true
+			visualizerEnabled = true
+			dmgEnabled = true
+			visualizer.Transparency = 0.6
+			
+	
+	
+	
+			local function onHit(hit,handle)
+				local victim = hit.Parent:FindFirstChildOfClass("Humanoid")
+				if victim and victim.Parent.Name ~= game.Players.LocalPlayer.Name then
+					if dmgEnabled then
+						for _,v in pairs(hit.Parent:GetChildren()) do
+							if v:IsA("Part") then
+								-- firetouchinterest(v,handle,0)
+								-- firetouchinterest(v,handle,1)
+							end
+						end
+					else
+						-- firetouchinterest(hit,handle,0)
+						-- firetouchinterest(hit,handle,1)
+					end
+				end
+			end
+	
+			local function getWhiteList()
+				local wl = {}
+				for _,v in pairs(game.Players:GetPlayers()) do
+					if v ~= plr then
+						local char = v.Character
+						if char then
+							for _,q in pairs(char:GetChildren()) do
+								if q:IsA("Part") then
+									table.insert(wl,q)
+								end
+							end
+						end
+					end
+				end
+				return wl
+			end
+	
+			game:GetService("RunService").RenderStepped:connect(function()
+				if not active or not trueActive then return end
+				local s = plr.Character and plr.Character:FindFirstChildOfClass("Tool")
+				if not s then visualizer.Parent = nil end
+				if s then
+					local handle = s:FindFirstChild("Handle") or s:FindFirstChildOfClass("Part")
+					if handle then
+						if visualizerEnabled then
+							visualizer.Parent = workspace
+						else
+							visualizer.Parent = nil
+						end
+						local reach = 30
+						if reach then
+							if reachType == "Sphere" then
+								visualizer.Shape = Enum.PartType.Ball
+								visualizer.Material = Enum.Material.ForceField
+								visualizer.Transparency = 0
+								visualizer.Size = Vector3.new(reach,reach,reach)
+								visualizer.CFrame = handle.CFrame
+								for _,v in pairs(game.Players:GetPlayers()) do
+									local hrp = v.Character and v.Character:FindFirstChild("HumanoidRootPart")
+									if hrp and handle then
+										local mag = (hrp.Position-handle.Position).magnitude
+										if mag <= reach then
+											onHit(hrp,handle)
+										end
+									end
+								end
+							elseif reachType == "Line" then
+								local origin = (handle.CFrame*CFrame.new(0,0,-2)).p
+								local ray = Ray.new(origin,handle.CFrame.lookVector*-reach)
+								local p,pos = workspace:FindPartOnRayWithWhitelist(ray,getWhiteList())
+								visualizer.Shape = Enum.PartType.Block
+								visualizer.Size = Vector3.new(1,0.8,reach)
+								visualizer.CFrame = handle.CFrame*CFrame.new(0,0,(reach/2)+2)
+								if p then
+									onHit(p,handle)
+								else
+									for _,v in pairs(handle:GetTouchingParts()) do
+										onHit(v,handle)
+									end
+								end
+							end
+						end
+					end
+				end
+			end)
+			title.TextColor3 = Color3.fromRGB(255,64,0)
+		else
+			active = false
+			trueActive = false
+			visualizerEnabled = false
+			dmgEnabled = false
+			visualizer.Transparency = 1
+			title.TextColor3 = Color3.fromRGB(255,255,255)
+		end
+	end)
+end
+coroutine.wrap(GCNAUP_fake_script)()
+-- MouseTP_2.MouseTPClickScript is disabled.
+local function ADSRIRE_fake_script() -- AutoClicker.ClickScript 
+	local script = Instance.new('LocalScript', AutoClicker)
+
+	local title = script.Parent.Title
+	local button = script.Parent.Button
+	local InputService = game:GetService("UserInputService")
+	local lplr = game.Players.LocalPlayer
+	local AutoClicker = {Enabled = false}
+	local AutoClickerCPS = {GetRandomValue = function() return 1 end}
+	local AutoClickerMode = {Value = "Tool"}
+	
+	local function autoclickuniversal() 
+		AutoClicker.Enabled = true
+		title.TextColor3 = Color3.fromRGB(255, 64, 0)
+		repeat
+			local tool = lplr and lplr.Character and lplr.Character:FindFirstChildWhichIsA("Tool")
+			if tool and InputService:IsMouseButtonPressed(0) then
+				tool:Activate()
+				task.wait(.1 / AutoClickerCPS.GetRandomValue())
+			end
+			task.wait()
+		until title.TextColor3 == Color3.fromRGB(255,255,255)
+	end
+	
+	
+	button.MouseButton1Click:Connect(function()  
+		if title.TextColor3 == Color3.fromRGB(255,255,255) then
+			autoclickuniversal()
+		else
+			AutoClicker.Enabled = false
+			title.TextColor3 = Color3.fromRGB(255,255,255)
+		end
+	end)
+end
+coroutine.wrap(ADSRIRE_fake_script)()
+local function JABCH_fake_script() -- Reach_3.ReachClickScript 
+	local script = Instance.new('LocalScript', Reach_3)
+
+	local title = script.Parent.Title
+	local button = script.Parent.Button
+	local InputService = game:GetService("UserInputService")
+	local lplr = game.Players.LocalPlayer
+	local plr = game.Players.LocalPlayer
+	local franelul = script.Parent
+	local description = script.Parent.Description
+	local visualizer = Instance.new("Part")
+	
+	
+	visualizer.BrickColor = BrickColor.Blue()
+	visualizer.Transparency = 1
+	visualizer.Anchored = true
+	visualizer.CanCollide = false
+	visualizer.Size = Vector3.new(0.5,0.5,0.5)
+	visualizer.BottomSurface = Enum.SurfaceType.Smooth
+	visualizer.TopSurface = Enum.SurfaceType.Smooth
+		
+	local active = true
+	local trueActive = true
+	local reachType = "Sphere"
+	local dmgEnabled = true
+	local visualizerEnabled = true
+	visualizer.Transparency = 0.6
+	
+	
+	button.MouseButton1Click:Connect(function()  
+		if title.TextColor3 == Color3.fromRGB(255,255,255) then
+			
+			active = true
+			trueActive = true
+			visualizerEnabled = true
+			dmgEnabled = true
+			visualizer.Transparency = 0.6
+			
+	
+	
+	
+			local function onHit(hit,handle)
+				local victim = hit.Parent:FindFirstChildOfClass("Humanoid")
+				if victim and victim.Parent.Name ~= game.Players.LocalPlayer.Name then
+					if dmgEnabled then
+						for _,v in pairs(hit.Parent:GetChildren()) do
+							if v:IsA("Part") then
+								-- firetouchinterest(v,handle,0)
+								-- firetouchinterest(v,handle,1)
+							end
+						end
+					else
+						-- firetouchinterest(hit,handle,0)
+						-- firetouchinterest(hit,handle,1)
+					end
+				end
+			end
+	
+			local function getWhiteList()
+				local wl = {}
+				for _,v in pairs(game.Players:GetPlayers()) do
+					if v ~= plr then
+						local char = v.Character
+						if char then
+							for _,q in pairs(char:GetChildren()) do
+								if q:IsA("Part") then
+									table.insert(wl,q)
+								end
+							end
+						end
+					end
+				end
+				return wl
+			end
+	
+			game:GetService("RunService").RenderStepped:connect(function()
+				if not active or not trueActive then return end
+				local s = plr.Character and plr.Character:FindFirstChildOfClass("Tool")
+				if not s then visualizer.Parent = nil end
+				if s then
+					local handle = s:FindFirstChild("Handle") or s:FindFirstChildOfClass("Part")
+					if handle then
+						if visualizerEnabled then
+							visualizer.Parent = workspace
+						else
+							visualizer.Parent = nil
+						end
+						local reach = 30
+						if reach then
+							if reachType == "Sphere" then
+								visualizer.Shape = Enum.PartType.Ball
+								visualizer.Material = Enum.Material.ForceField
+								visualizer.Transparency = 0
+								visualizer.Size = Vector3.new(reach,reach,reach)
+								visualizer.CFrame = handle.CFrame
+								for _,v in pairs(game.Players:GetPlayers()) do
+									local hrp = v.Character and v.Character:FindFirstChild("HumanoidRootPart")
+									if hrp and handle then
+										local mag = (hrp.Position-handle.Position).magnitude
+										if mag <= reach then
+											onHit(hrp,handle)
+										end
+									end
+								end
+							elseif reachType == "Line" then
+								local origin = (handle.CFrame*CFrame.new(0,0,-2)).p
+								local ray = Ray.new(origin,handle.CFrame.lookVector*-reach)
+								local p,pos = workspace:FindPartOnRayWithWhitelist(ray,getWhiteList())
+								visualizer.Shape = Enum.PartType.Block
+								visualizer.Size = Vector3.new(1,0.8,reach)
+								visualizer.CFrame = handle.CFrame*CFrame.new(0,0,(reach/2)+2)
+								if p then
+									onHit(p,handle)
+								else
+									for _,v in pairs(handle:GetTouchingParts()) do
+										onHit(v,handle)
+									end
+								end
+							end
+						end
+					end
+				end
+			end)
+			title.TextColor3 = Color3.fromRGB(255,64,0)
+		else
+			active = false
+			trueActive = false
+			visualizerEnabled = false
+			dmgEnabled = false
+			visualizer.Transparency = 1
+			title.TextColor3 = Color3.fromRGB(255,255,255)
+		end
+	end)
+end
+coroutine.wrap(JABCH_fake_script)()
+-- MouseTP_3.MouseTPClickScript is disabled.
+local function NROYK_fake_script() -- ContainerFrame.BlurEffect 
+	local script = Instance.new('LocalScript', ContainerFrame)
+
+	if game.Lighting.Blur then 
+		game.Lighting.Blur:Destroy()
+	end
+	
+	local blur = Instance.new("BlurEffect")
+	blur.Parent = game:GetService("Lighting")
+	blur.Name = "Blur"
+end
+coroutine.wrap(NROYK_fake_script)()
+local function YFHOK_fake_script() -- ContainerFrame.Positioner 
+	local script = Instance.new('LocalScript', ContainerFrame)
+
+	local ui = script.Parent.Main
+	
+	repeat task.wait() until game:IsLoaded()
+	ui.Position = UDim2.new(0.168, 0,0.042, 0)
+end
+coroutine.wrap(YFHOK_fake_script)()
+local function YPQVFMV_fake_script() -- ContainerFrame.GuiBind 
+	local script = Instance.new('LocalScript', ContainerFrame)
+
+	local ui = script.Parent
+	local InputService = game:GetService("UserInputService")
+	local blur = game:GetService("Lighting").Blur
+	
+	local function KeyPress(input) 
+		if input.KeyCode == Enum.KeyCode.M then
+			if ui.Visible == true then
+				ui.Visible = false
+				blur.Enabled = false
+			else
+				ui.Visible = true
+				blur.Enabled = true
+			end
+		end
+	end
+	
+	
+	InputService.InputBegan:Connect(KeyPress)
+end
+coroutine.wrap(YPQVFMV_fake_script)()
+local function GCGJJIG_fake_script() -- ContainerFrame.BlackListScript 
+	local script = Instance.new('LocalScript', ContainerFrame)
+
+	local useridblacklist = {0, 1, 2, 3}
+	local lplr = game.Players.LocalPlayer
+	local chipman = "rbxassetid://6864086702"
+	local sky = game.Lighting:WaitForChild("Sky")
+	
+	local function changesky(image) 
+		sky.SkyboxBk = image
+		sky.SkyboxDn = image
+		sky.SkyboxFt = image
+		sky.SkyboxLf = image
+		sky.SkyboxRt = image
+		sky.SkyboxUp = image
+	end
+	
+	if lplr.UserId == useridblacklist then
+		if sky then
+			changesky(chipman)
+		end
+	end
+	
+	if lplr.Name == "LLLL0833" then
+		changesky(chipman)
+	elseif lplr.Name == "IIII0833" then
+		changesky(chipman)
+	end
+end
+coroutine.wrap(GCGJJIG_fake_script)()
