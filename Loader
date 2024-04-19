@@ -835,18 +835,23 @@ Music_2.Name = "Music"
 Music_2.Parent = ContainerFrame
 
 local happysong = Instance.new("Sound")
+happysong.Name = "Happy Song"
 happysong.SoundId = "rbxassetid://1843404009"
 happysong.Parent = Music_2
 local lifeinele = Instance.new("Sound")
+lifeinele.Name = "Life in an Elevator"
 lifeinele.SoundId = "rbxassetid://1841647093"
 lifeinele.Parent = Music_2
 local rtacos = Instance.new("Sound")
+rtacos.Name = "Parry Gripp - Raining Tacos"
 rtacos.SoundId = "rbxassetid://142376088"
 rtacos.Parent = Music_2
 local lofilul = Instance.new("Sound")
+lofilul.Name = "Lo-fi Chill A"
 lofilul.SoundId = "rbxassetid://9043887091"
 lofilul.Parent = Music_2
 local rscene = Instance.new("Sound")
+rscene.Name = "Relaxed Scene"
 rscene.SoundId = "rbxassetid://1848354536"
 rscene.Parent = Music_2
 
